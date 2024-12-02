@@ -1,8 +1,4 @@
-/*
- * TestClass1 : To add/edit/delete Expenses, add/edit/delete category and user credentials update validation.
- * Test cases are reading data from DataProviderClass and performing action.
- * Please refer DataProviderClass for different sets of input data.
- */
+
 
 package testClassPackage;
 
@@ -36,11 +32,7 @@ public class TestClass1 {
 		LoginPage.loginToExpenseTracker(driver, "Ramesh", "pass1");
 	}
 
-//*********************************************************************************************************	
-		/*
-		 * Test cases based on User story-004: 
-		 * As a personal finance lover, user can manage the categories I can use to classify my expenses.
-		 */
+
 		
 		@Test(enabled=true, dataProvider="categories", dataProviderClass=DataProviderClass.class)
 		public void testcase1_create_category(String category) {
@@ -59,12 +51,7 @@ public class TestClass1 {
 	
 	
 	
-//***********************************************************************************************************	
-	/*
-	 * Test cases based on User story-002: 
-	 * As a personal finance lover, user can track all his/her expenses in an easy way.
-	 * Here test case is reading input data from DataProviderclass to create expenses
-	 */
+
 	
 	@Test(enabled=true, dataProvider="getExpensesData", dataProviderClass=DataProviderClass.class)
 	public void testcase4_add_expenses(String day, String month, String year, 
@@ -74,11 +61,7 @@ public class TestClass1 {
 
 
 	
-//***********************************************************************************************************	
-	/*
-	 * Test cases based on User story-003: 
-	 * As a personal finance lover, User can manage the expenses that he/she has already registered.
-	 */
+
 	
 	@Test(enabled=true)
 	public void testcase5_edit_expenses() {
@@ -92,13 +75,7 @@ public class TestClass1 {
 	
 	
 	
-//***********************************************************************************************************	
-	/*
-	 * Test cases based on User story-001: 
-	 * As a personal finance lover, user can see all his/her expenses in one single place.
-	 * Here user expenses are listed to confirm that user can see all his finance details
-	 * in one single page.
-	 */
+
 	
 	@Test(enabled=true)
 	public void testcase7_list_expenses() {
@@ -107,12 +84,7 @@ public class TestClass1 {
 	
 	
 	
-//************************************************************************************************************		
-	/*
-	 * Test cases based on user story-008
-	 * Here edit user account is validated with different set of inputs that are provided through DataProviderClass
-	 * Please refer DataProviderClass for different set of inputs.
-	 */
+
 	
 	@Test(enabled=true, dataProvider="editUserData", dataProviderClass=DataProviderClass.class)
 	public void testcase8_edit_user_account(String Oldpassword, String newpassword, String Repeatpassword) {
@@ -124,7 +96,6 @@ public class TestClass1 {
 		EditUserAccount.validateEditUserName(driver, "EditUserName");
 	}
 	
-//************************************************************************************************************	
 	
 	@AfterClass
 	public void tearDown() {

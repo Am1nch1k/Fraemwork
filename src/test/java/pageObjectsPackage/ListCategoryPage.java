@@ -1,8 +1,4 @@
-/*
- * This is the page class for List Category page.
- * All the methods defined here can be re-used to find the web element in list category page and perform actions.
- * Adding new categories of expenses, editing and deleting the categories of expenses
- */
+
 
 package pageObjectsPackage;
 
@@ -71,7 +67,6 @@ public class ListCategoryPage {
 	
 	
 	
-//	This method is used to add the categories of expenses
 	public static void listCategories(WebDriver driver, String str1) {
 		clickListCategoryPage(driver);
 		clickAddtCategoryPage(driver);
@@ -80,7 +75,6 @@ public class ListCategoryPage {
 	}
 	
 	
-//	This method is used to edit the categories of expenses
 	public static void editCategories(WebDriver driver, String str1) {
 		clickListCategoryPage(driver);
 		editListedCategory(driver);
@@ -90,7 +84,6 @@ public class ListCategoryPage {
 	}
 	
 	
-//	This method is used to delete the categories of expenses
 	public static void deleteCategories(WebDriver driver) {
 		ListCategoryPage.clickListCategoryPage(driver);
 		ListCategoryPage.deleteListedCategory(driver);

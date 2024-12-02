@@ -1,7 +1,4 @@
-/*
- * This is the page class for add expenses page.
- * All the methods defined here can be re-used to find the web element and perform actions.
- */
+
 
 package pageObjectsPackage;
 
@@ -78,7 +75,6 @@ public class AddExpensesPage {
 		}
 
 	
-//	Method to add expenses
 	public static void addExpenses(WebDriver driver, String day, String month, 
 			String year, String category, String amount, String reason ) {
 		goToAddExpensePage(driver);
@@ -92,7 +88,6 @@ public class AddExpensesPage {
 	}
 
 	
-//	Method to edit the expenses
 	public static void editExpenses(WebDriver driver, String day, String month, 
 			String year, String category, String amount, String reason) {
 		editListedExpenses(driver);

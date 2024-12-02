@@ -1,8 +1,4 @@
-/*
- * This is the page class for Edit user account page.
- * All the methods defined here can be re-used to find the web element in Edit user account page and perform actions.
- * All the functionalities related user account details are verified as per the given user story-008
- */
+
 
 package pageObjectsPackage;
 import org.openqa.selenium.Alert;

@@ -1,8 +1,4 @@
-/*
- * This is the page class for List expenses page.
- * All the methods defined here can be re-used to find the web element in list expenses page and perform actions.
- * Here methods are defined to edit, delete and extract the expenses information.
- */
+
 
 package pageObjectsPackage;
 
@@ -20,7 +16,6 @@ public class ListExpensesPage {
 	
 	public static WebElement element = null;
 	
-//	Method to edit the listed expenses
 	public static void editListedExpenses(WebDriver driver) {
 		try{
 			List<WebElement> listedExpense = driver.findElements(
@@ -36,7 +31,6 @@ public class ListExpensesPage {
 		}
 	
 	
-//	Method to delete the listed expenses
 	public static void deleteListedExpenses(WebDriver driver) {
 		try{
 			List<WebElement> listedExpense = driver.findElements(
@@ -56,7 +50,6 @@ public class ListExpensesPage {
 		}
 	
 	
-//	Method to extract the listed expenses and verify expenses
 	public static void ListExpenses(WebDriver driver) {
 		driver.findElement(By.id("go_list_expenses")).click();
 		WebElement table_element = driver.findElement(By.xpath("//table[@class='table']"));
